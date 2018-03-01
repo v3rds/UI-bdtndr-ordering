@@ -14,14 +14,16 @@
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="circle-progress-bar.css">
+    <link rel="stylesheet" type="text/css" href="order-status.css">
 </head>
 
 <body>
-
 	<!--Main Navigation-->
 	    <header>
 	    
-	        <nav class="navbar navbar-expand-lg navbar-dark deep-purple darken-4">
+	        <nav class="navbar navbar-expand-lg navbar-dark purple darken-4">
 	            <a class="navbar-brand" href="#"><strong>Navbar</strong></a>
 	            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	                <span class="navbar-toggler-icon"></span>
@@ -54,105 +56,171 @@
 	                </ul>
 	            </div>
 	        </nav>
-	    
 	    </header>
 	<!--?Main Navigation-->
     
     <!--Main Layout-->
-	    <main style="background-color: #fafafa;">
-			<!-- Tabs -->
-			<div class="row">
-				<div class="col-md-12">
+		<div class="row">
+			<div id="receipt" class="col-xs-6 tab tab-active x" style="width: 50%;">
+	      		RECEIPT
+			</div>
+			<div id="status" class="col-xs-6 tab x" style="width: 50%;">
+			  	STATUS
+	    	</div>
+		</div>
+		  
+			    <!-- <div id="status-tab" class="row" style="display: none;"> -->
+			    <div id="status-tab" class="row">
 
-					<!-- Nav tabs -->
-						<ul class="nav nav-tabs nav-justified deep-purple darken-4">
-						    <li class="nav-item">
-						        <a class="nav-link active" data-toggle="tab" href="#panel1" role="tab">Reciept</a>
-						    </li>
-						    <li class="nav-item">
-						        <a class="nav-link" data-toggle="tab" href="#panel2" role="tab">Status</a>
-						    </li>
-						</ul>
-						<!-- Tab panels -->
-						<div class="tab-content card">
-						    <!--Panel 1-->
-						    <div class="tab-pane fade in show active" id="panel1" role="tabpanel">
-						        <br>
-						        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
-						            reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
-						            porro voluptate odit minima.</p>
-						    </div>
-						    <!--/.Panel 1-->
-						    <!--Panel 2-->
-						    <div class="tab-pane fade" id="panel2" role="tabpanel">
-						        <div class="row">
+						<div class="col-md-6 x">
 
-									<div class="col-md-6">
-										<div class="row">
-											<div class="col-md-5">
-											</div>
-											<div class="col-md-7">
-												<h3>Star Box</h3>
-												<p>Order # 123-345-654</p>
-												<p>12-23-2012 12:43</p>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-md-12">
-											</div>
-										</div>
-									</div>
+							<div class="row" style="justify-content: center; align-items: center;">
+								<div class="col-md-6 x">
+									<!-- LOGO -->
+									<img src="http://brandmark.io/logo-rank/random/mcdonalds.png" class="img-fluid rounded-circle" style="padding: 30px;">
+		            			</div>
+								<div class="col-md-6 text-center x">
+									<h1><b>Mc Donut</b></h1> 
+						            <p>Order #: 123-432-112 <br>
+						            12-31-1995</p>
+					            </div>
+							</div>
 
-									<div class="col-md-6">
-										<div class="row">
-											<div class="col-md-6">
-												
-											</div>
-											<div class="col-md-6">
-												<h3>Order Received</h3>
-												<p>The app has received your order.</p>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-md-6">
-											</div>
-											<div class="col-md-6">
-												<h3>In Line</h3>
-												<p>You're next in line.</p>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-md-6">
-											</div>
-											<div class="col-md-6">
-												<h3>Order is Being Prepared.</h3>
-												<p>Order printed and your order is being prepared.</p>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-md-6">
+							<div class="row justify-content-md-center" style="background-color: red;">
 
-												 
+								<div class="col-md-3 x" style="background-color: blue;">
+									
+									ORDER PROGRESS BAR
+					             	<span>
+						             	<div class="progress-circle over50 p64" style="font-size: 50px;">
+				                			<span>64%</span>
+							                <div class="left-half-clipper" >
+							                  <div class="first50-bar"></div>
+							                  <div class="value-bar"></div>
+							                </div>
+				              			</div>
+									</span>
+		            			</div>
 
-											</div>
-											<div class="col-md-6">
-												<h3>Order Should be ready</h3>
-												<p>We'll notify you when ready.</p>
-											</div>
-										</div>
-									</div>
-
-								</div><!-- row -->
-						    </div><!--/.Panel 2-->
+							</div>
 
 						</div>
 
-				</div><!-- class="col-md-12" -->
-			</div><!-- class="row" -->
-			
-	    </main>
+						<div class="col-md-6 x">
+	
+							<div class="row">
+
+								<div class="col-md-6 x">
+									<div class="progress-circle over50 p100" style="font-size: 20px;">
+										
+										<span>100%</span>
+										
+										<div class="left-half-clipper" >
+											  <div class="first50-bar"></div>
+											  <div class="value-bar"></div>
+										</div>
+									
+									</div>			  
+					            </div>
+
+								<div class="col-md-6 x">
+		              				Order Recieved
+								</div>
+
+							</div><!-- row -->
+	
+							<div class="row">
+
+								<div class="col-md-6 x">
+									<div class="progress-circle over50 p100" style="font-size: 20px;">
+										
+										<span>100%</span>
+										
+										<div class="left-half-clipper" >
+											  <div class="first50-bar"></div>
+											  <div class="value-bar"></div>
+										</div>
+									
+									</div>			  
+					            </div>
+
+								<div class="col-md-6 x">
+		              				Order Recieved
+								</div>
+
+							</div><!-- row -->
+	
+							<div class="row">
+
+								<div class="col-md-6 x">
+									<div class="progress-circle over50 p100" style="font-size: 20px;">
+										
+										<span>100%</span>
+										
+										<div class="left-half-clipper" >
+											  <div class="first50-bar"></div>
+											  <div class="value-bar"></div>
+										</div>
+									
+									</div>			  
+					            </div>
+
+								<div class="col-md-6 x">
+		              				Order Recieved
+								</div>
+
+							</div><!-- row -->
+	
+							<div class="row">
+
+								<div class="col-md-6 x">
+									<div class="progress-circle over50 p100" style="font-size: 20px;">
+										
+										<span>100%</span>
+										
+										<div class="left-half-clipper" >
+											  <div class="first50-bar"></div>
+											  <div class="value-bar"></div>
+										</div>
+									
+									</div>			  
+					            </div>
+
+								<div class="col-md-6 x">
+		              				Order Recieved
+								</div>
+
+							</div><!-- row -->
+
+						</div><!-- col -->
+					</div><!-- status tab -->
+		  
+		      <div id="receipt-tab" class="row">
+		        Order Summary
+		      </div>
+		</div><!-- row -->
+
     <!--/Main Layout-->
 
+    <script type="text/javascript">
+    	$(document).ready(function(){
+		  //RECEIPT TAB ACTIVATE
+		    $("#receipt").click(function(){
+		        $(this).addClass("tab-active");
+		        $("#status").removeClass("tab-active");
+		        $("#status-tab").css("display","none");
+		        $("#receipt-tab").show();
+
+		    });
+		  //STATUS TAB ACTIVATE
+		    $("#status").click(function(){
+		        $(this).addClass("tab-active");
+		        $("#receipt").removeClass("tab-active");
+		        $("#receipt-tab").css("display","none");
+		        $("#status-tab").show();
+		    });
+		});
+    </script>
 <!-- SCRIPTS & JQuery -->
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <!-- Bootstrap tooltips -->
@@ -161,6 +229,33 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'></script>
+	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js'></script>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+	  
+
+	    <script >
+	      $(document).ready(function(){
+	  //RECEIPT TAB ACTIVATE
+	    $("#receipt").click(function(){
+	        $(this).addClass("tab-active");
+	        $("#status").removeClass("tab-active");
+	        $("#status-tab").css("display","none");
+	        $("#receipt-tab").show();
+
+	    });
+	  //STATUS TAB ACTIVATE
+	    $("#status").click(function(){
+	        $(this).addClass("tab-active");
+	        $("#receipt").removeClass("tab-active");
+	        $("#receipt-tab").css("display","none");
+	        $("#status-tab").show();
+	    });
+	});
+	    </script>
+
 </body>
 
 </html>
