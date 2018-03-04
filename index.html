@@ -58,7 +58,7 @@
 	<!--?Main Navigation-->
     
     <!--Main Layout-->
-		<div class="row"><!-- tab -->
+		<div class="row testrow"><!-- tab -->
 			<div id="status" class="col tab tab-active">
 			  	STATUS
 	    	</div>
@@ -67,15 +67,15 @@
 			</div>
 		</div><!-- tab -->
 
-		<div class="row testrow" id="status-tab">
-			<div class="col-12 col-md-6 testcol" id="panel-1" style="margin-top: 10px; margin-bottom: 10px;">
-				<div class="row testrow">
-					<div class="col-4 col-md-6 testcol" align="right">
+		<div class="row testrow testrow" id="status-tab">
+			<div class="col-12 col-md-6 testcol testcol" id="panel-1" style="margin-top: 10px; margin-bottom: 10px;">
+				<div class="row testrow testrow">
+					<div class="col-4 col-md-6 testcol testcol" align="right">
 						        <!-- Company logo -->
 								<img class="img-fluid rounded-circle verticalcenter" id="logo" src="http://brandmark.io/logo-rank/random/mcdonalds.png">
 							
 				    </div>
-				    <div class="col-4 col-md-6 testcol" style="padding: 0px;">
+				    <div class="col-4 col-md-6 testcol testcol" style="padding: 0px;">
 				    	<div class="verticalcenter "><!-- myColoredCol -->
 					    	<h1 id="store-name"><b>Mc Donut</b></h1> 
 				            <p id="order-details">
@@ -85,7 +85,7 @@
 				    	</div>
 				    </div>
 				    <!-- ORDER SUMMARY PROGRESS BAR -->
-				    <div class="col-4 col-md-12 testcol" align="center" style="padding: 0px;">
+				    <div class="col-4 col-md-12 testcol testcol" align="center" style="padding: 0px;">
              			<div class="progress-circle over50 p64" style="margin: 10px;">
 		        			<span>64%</span>
 			                <div class="left-half-clipper" >
@@ -96,9 +96,9 @@
      				</div>
 				</div>
 			</div>
-			<div class="col-12 col-md-6 grey lighten-2 testcol" id="panel-2">
-				<div class="row testrow">
-					<div class="col-5 col-md-6 testcol" align="right">
+			<div class="col-12 col-md-6 grey lighten-4 testcol testcol" id="panel-2">
+				<div class="row testrow testrow">
+					<div class="col-5 col-md-6 testcol testcol" align="right">
 						<div class="progress-circle over50 p100" style="font-size: 20px;">
 							<span>100%</span>
 							<div class="left-half-clipper" >
@@ -107,14 +107,14 @@
 							</div>
 						</div>	
 					</div>
-					<div class="col-7 col-md-6 testcol" align="left">
+					<div class="col-7 col-md-6 testcol testcol" align="left">
 						<div class="verticalcenter">
 							Order Received
 						</div>
 					</div>
 				</div>
-				<div class="row testrow">
-					<div class="col-5 col-md-6 testcol" align="right">
+				<div class="row testrow testrow">
+					<div class="col-5 col-md-6 testcol testcol" align="right">
 						<div class="progress-circle over50 p100" style="font-size: 20px;">
 							<span>done!</span>
 							<div class="left-half-clipper" >
@@ -123,14 +123,14 @@
 							</div>
 						</div>	
 					</div>
-					<div class="col-7 col-md-6 testcol" align="left">
+					<div class="col-7 col-md-6 testcol testcol" align="left">
 						<div class="verticalcenter">
 							In Line
 						</div>
 					</div>
 				</div>
-				<div class="row testrow">
-					<div class="col-5 col-md-6 testcol" align="right">
+				<div class="row testrow testrow">
+					<div class="col-5 col-md-6 testcol testcol" align="right">
 						<div class="progress-circle over50 p100" style="font-size: 20px;">
 							<span>100%</span>
 							<div class="left-half-clipper" >
@@ -139,14 +139,14 @@
 							</div>
 						</div>	
 					</div>
-					<div class="col-7 col-md-6 testcol" align="left">
+					<div class="col-7 col-md-6 testcol testcol" align="left">
 						<div class="verticalcenter">
 							Order is Being Prepared
 						</div>
 					</div>
 				</div>
-				<div class="row testrow">
-					<div class="col-5 col-md-6 testcol" align="right">
+				<div class="row testrow testrow">
+					<div class="col-5 col-md-6 testcol testcol" align="right">
 						<div class="progress-circle over50 p100" style="font-size: 20px;">
 							<span>100%</span>
 							<div class="left-half-clipper" >
@@ -155,7 +155,7 @@
 							</div>
 						</div>	
 					</div>
-					<div class="col-7 col-md-6 testcol" align="left">
+					<div class="col-7 col-md-6 testcol testcol" align="left">
 						<div class="verticalcenter">
 							Order Should be Ready
 						</div>
@@ -164,19 +164,19 @@
 			</div>
 		</div>
 
-  
-		<div class="row" id="receipt-tab" style="display: none;">
-			<div class="container-fluid">
-				<!-- Store Name -->
-				<div class="row">
-					<div class="col-md-12" align="center" style="margin-top: 10px;">
-						<h2>
+		<div class="row justify-content-md-center testrow" id="receipt-tab" style="display: none; font-family: Courier new;padding: 20px;">
+			<!-- Store Name -->
+			<div class="col-12 col-md-6 grey lighten-4 z-depth-2"> <!-- -->
+				<div class="row testrow">
+					<div class="col-md-12" style="margin-top: 10px;">
+						<h2 align="center">
 							<b>Mc Donut</b>
 						</h2>
 					</div>
 				</div>
+
 				<!-- Order Itemized Summary -->
-				<div class="row">
+				<div class="row testrow">
 					<div class="col-md-12">
 						<table class="table">
 							<thead>
@@ -206,7 +206,7 @@
 									<td>
 										$ 2
 									</td>
-									<td>
+									<td align="right">
 										$ 2
 									</td>
 								</tr>
@@ -220,7 +220,7 @@
 									<td>
 										$ 4
 									</td>
-									<td>
+									<td align="right">
 										$ 8
 									</td>
 								</tr>
@@ -234,7 +234,7 @@
 									<td>
 										$ 6
 									</td>
-									<td>
+									<td align="right">
 										$ 18
 									</td>
 								</tr>
@@ -243,7 +243,7 @@
 					</div>
 				</div>
 				<!-- Computation in total -->
-				<div class="row">
+				<div class="row testrow">
 					<div class="col-md-12" align="center">
 						<table class="table">
 							<tbody>
@@ -251,7 +251,7 @@
 									<td>
 										Subtotal
 									</td>
-									<td>
+									<td align="right">
 										$ 24.64
 									</td>
 								</tr>
@@ -259,7 +259,7 @@
 									<td>
 										VAT
 									</td>
-									<td>
+									<td align="right">
 										$ 3.36
 									</td>
 								</tr>
@@ -267,7 +267,7 @@
 									<td>
 										TOTAL
 									</td>
-									<td>
+									<td align="right">
 										$ 28
 									</td>
 								</tr>
@@ -275,25 +275,40 @@
 						</table>			
 					</div>
 				</div>
-				<div class="row">
+				<div class="row testrow" style="margin-bottom: 10px;">
 					<div class="col-md-12" align="center">
-						<div class="row">
-							<div class="col-6" align="right">
-								Payment Method: <br>
-								Transaction No.: <br>
-								Date/Time:
-							</div>
-							<div class="col-6" align="left">
-								Debit Card <br>
-								111-333-555 <br>
-								01-23-2019 23:21
-							</div>
-						</div>
+						<table class="table" style="border: 0;">
+							<tbody>
+								<tr>
+									<td align="right">
+										Mode of Payment:
+									</td>
+									<td>
+										Debit Card
+									</td>
+								</tr>
+								<tr>
+									<td align="right">
+										Transaction No.:
+									</td>
+									<td>
+										123-432-412
+									</td>
+								</tr>
+								<tr>
+									<td align="right">
+										Date/Time:
+									</td>
+									<td>
+										01-23-2019 23:28
+									</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</div>
 			</div>
 		</div>
-
     <!--/Main Layout-->
 
 <!-- SCRIPTS & JQuery -->
