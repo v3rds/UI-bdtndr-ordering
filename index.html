@@ -15,14 +15,12 @@
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="circle-progress-bar.css">
     <link rel="stylesheet" type="text/css" href="order-status.css">
 </head>
 
-<body>
+<body style="padding: 0px;">
 	<!--Main Navigation-->
-	    <header>
-	    
+	    <header>	    
 	        <nav class="navbar navbar-expand-lg navbar-dark purple darken-4">
 	            <a class="navbar-brand" href="#"><strong>Navbar</strong></a>
 	            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,167 +58,244 @@
 	<!--?Main Navigation-->
     
     <!--Main Layout-->
-		<div class="row">
-			<div id="receipt" class="col-xs-6 tab tab-active x" style="width: 50%;">
-	      		RECEIPT
-			</div>
-			<div id="status" class="col-xs-6 tab x" style="width: 50%;">
+		<div class="row"><!-- tab -->
+			<div id="status" class="col tab tab-active">
 			  	STATUS
 	    	</div>
-		</div>
-		  
-			    <!-- <div id="status-tab" class="row" style="display: none;"> -->
-			    <div id="status-tab" class="row">
+			<div id="receipt" class="col tab">
+	      		RECEIPT
+			</div>
+		</div><!-- tab -->
 
-						<div class="col-md-6 x">
-
-							<div class="row" style="justify-content: center; align-items: center;">
-								<div class="col-md-6 x">
-									<!-- LOGO -->
-									<img src="http://brandmark.io/logo-rank/random/mcdonalds.png" class="img-fluid rounded-circle" style="padding: 30px;">
-		            			</div>
-								<div class="col-md-6 text-center x">
-									<h1><b>Mc Donut</b></h1> 
-						            <p>Order #: 123-432-112 <br>
-						            12-31-1995</p>
-					            </div>
+		<div class="row testrow" id="status-tab">
+			<div class="col-12 col-md-6 testcol" id="panel-1" style="margin-top: 10px; margin-bottom: 10px;">
+				<div class="row testrow">
+					<div class="col-4 col-md-6 testcol" align="right">
+						        <!-- Company logo -->
+								<img class="img-fluid rounded-circle verticalcenter" id="logo" src="http://brandmark.io/logo-rank/random/mcdonalds.png">
+							
+				    </div>
+				    <div class="col-4 col-md-6 testcol" style="padding: 0px;">
+				    	<div class="verticalcenter "><!-- myColoredCol -->
+					    	<h1 id="store-name"><b>Mc Donut</b></h1> 
+				            <p id="order-details">
+				            	Order #: 123-432-112 <br>
+				            	12-31-1995
+				            </p>
+				    	</div>
+				    </div>
+				    <!-- ORDER SUMMARY PROGRESS BAR -->
+				    <div class="col-4 col-md-12 testcol" align="center" style="padding: 0px;">
+             			<div class="progress-circle over50 p64" style="margin: 10px;">
+		        			<span>64%</span>
+			                <div class="left-half-clipper" >
+			                  <div class="first50-bar"></div>
+			                  <div class="value-bar"></div>
+			                </div>
+		      			</div>
+     				</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 grey lighten-2 testcol" id="panel-2">
+				<div class="row testrow">
+					<div class="col-5 col-md-6 testcol" align="right">
+						<div class="progress-circle over50 p100" style="font-size: 20px;">
+							<span>100%</span>
+							<div class="left-half-clipper" >
+								  <div class="first50-bar"></div>
+								  <div class="value-bar"></div>
 							</div>
-
-							<div class="row justify-content-md-center" style="background-color: red;">
-
-								<div class="col-md-3 x" style="background-color: blue;">
-									
-									ORDER PROGRESS BAR
-					             	<span>
-						             	<div class="progress-circle over50 p64" style="font-size: 50px;">
-				                			<span>64%</span>
-							                <div class="left-half-clipper" >
-							                  <div class="first50-bar"></div>
-							                  <div class="value-bar"></div>
-							                </div>
-				              			</div>
-									</span>
-		            			</div>
-
-							</div>
-
+						</div>	
+					</div>
+					<div class="col-7 col-md-6 testcol" align="left">
+						<div class="verticalcenter">
+							Order Received
 						</div>
+					</div>
+				</div>
+				<div class="row testrow">
+					<div class="col-5 col-md-6 testcol" align="right">
+						<div class="progress-circle over50 p100" style="font-size: 20px;">
+							<span>done!</span>
+							<div class="left-half-clipper" >
+								  <div class="first50-bar"></div>
+								  <div class="value-bar"></div>
+							</div>
+						</div>	
+					</div>
+					<div class="col-7 col-md-6 testcol" align="left">
+						<div class="verticalcenter">
+							In Line
+						</div>
+					</div>
+				</div>
+				<div class="row testrow">
+					<div class="col-5 col-md-6 testcol" align="right">
+						<div class="progress-circle over50 p100" style="font-size: 20px;">
+							<span>100%</span>
+							<div class="left-half-clipper" >
+								  <div class="first50-bar"></div>
+								  <div class="value-bar"></div>
+							</div>
+						</div>	
+					</div>
+					<div class="col-7 col-md-6 testcol" align="left">
+						<div class="verticalcenter">
+							Order is Being Prepared
+						</div>
+					</div>
+				</div>
+				<div class="row testrow">
+					<div class="col-5 col-md-6 testcol" align="right">
+						<div class="progress-circle over50 p100" style="font-size: 20px;">
+							<span>100%</span>
+							<div class="left-half-clipper" >
+								  <div class="first50-bar"></div>
+								  <div class="value-bar"></div>
+							</div>
+						</div>	
+					</div>
+					<div class="col-7 col-md-6 testcol" align="left">
+						<div class="verticalcenter">
+							Order Should be Ready
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-						<div class="col-md-6 x">
-	
-							<div class="row">
-
-								<div class="col-md-6 x">
-									<div class="progress-circle over50 p100" style="font-size: 20px;">
-										
-										<span>100%</span>
-										
-										<div class="left-half-clipper" >
-											  <div class="first50-bar"></div>
-											  <div class="value-bar"></div>
-										</div>
-									
-									</div>			  
-					            </div>
-
-								<div class="col-md-6 x">
-		              				Order Recieved
-								</div>
-
-							</div><!-- row -->
-	
-							<div class="row">
-
-								<div class="col-md-6 x">
-									<div class="progress-circle over50 p100" style="font-size: 20px;">
-										
-										<span>100%</span>
-										
-										<div class="left-half-clipper" >
-											  <div class="first50-bar"></div>
-											  <div class="value-bar"></div>
-										</div>
-									
-									</div>			  
-					            </div>
-
-								<div class="col-md-6 x">
-		              				Order Recieved
-								</div>
-
-							</div><!-- row -->
-	
-							<div class="row">
-
-								<div class="col-md-6 x">
-									<div class="progress-circle over50 p100" style="font-size: 20px;">
-										
-										<span>100%</span>
-										
-										<div class="left-half-clipper" >
-											  <div class="first50-bar"></div>
-											  <div class="value-bar"></div>
-										</div>
-									
-									</div>			  
-					            </div>
-
-								<div class="col-md-6 x">
-		              				Order Recieved
-								</div>
-
-							</div><!-- row -->
-	
-							<div class="row">
-
-								<div class="col-md-6 x">
-									<div class="progress-circle over50 p100" style="font-size: 20px;">
-										
-										<span>100%</span>
-										
-										<div class="left-half-clipper" >
-											  <div class="first50-bar"></div>
-											  <div class="value-bar"></div>
-										</div>
-									
-									</div>			  
-					            </div>
-
-								<div class="col-md-6 x">
-		              				Order Recieved
-								</div>
-
-							</div><!-- row -->
-
-						</div><!-- col -->
-					</div><!-- status tab -->
-		  
-		      <div id="receipt-tab" class="row">
-		        Order Summary
-		      </div>
-		</div><!-- row -->
+  
+		<div class="row" id="receipt-tab" style="display: none;">
+			<div class="container-fluid">
+				<!-- Store Name -->
+				<div class="row">
+					<div class="col-md-12" align="center" style="margin-top: 10px;">
+						<h2>
+							<b>Mc Donut</b>
+						</h2>
+					</div>
+				</div>
+				<!-- Order Itemized Summary -->
+				<div class="row">
+					<div class="col-md-12">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>
+										Qty
+									</th>
+									<th>
+										Item
+									</th>
+									<th>
+										Price
+									</th>
+									<th>
+										Status
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										2
+									</td>
+									<td>
+										Sativa Red
+									</td>
+									<td>
+										$ 2
+									</td>
+									<td>
+										$ 2
+									</td>
+								</tr>
+								<tr>
+									<td>
+										3
+									</td>
+									<td>
+										Sativa Orange
+									</td>
+									<td>
+										$ 4
+									</td>
+									<td>
+										$ 8
+									</td>
+								</tr>
+								<tr>
+									<td>
+										5
+									</td>
+									<td>
+										Indica Red
+									</td>
+									<td>
+										$ 6
+									</td>
+									<td>
+										$ 18
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- Computation in total -->
+				<div class="row">
+					<div class="col-md-12" align="center">
+						<table class="table">
+							<tbody>
+								<tr>
+									<td>
+										Subtotal
+									</td>
+									<td>
+										$ 24.64
+									</td>
+								</tr>
+								<tr>
+									<td>
+										VAT
+									</td>
+									<td>
+										$ 3.36
+									</td>
+								</tr>
+								<tr>
+									<td>
+										TOTAL
+									</td>
+									<td>
+										$ 28
+									</td>
+								</tr>
+							</tbody>
+						</table>			
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12" align="center">
+						<div class="row">
+							<div class="col-6" align="right">
+								Payment Method: <br>
+								Transaction No.: <br>
+								Date/Time:
+							</div>
+							<div class="col-6" align="left">
+								Debit Card <br>
+								111-333-555 <br>
+								01-23-2019 23:21
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
     <!--/Main Layout-->
 
-    <script type="text/javascript">
-    	$(document).ready(function(){
-		  //RECEIPT TAB ACTIVATE
-		    $("#receipt").click(function(){
-		        $(this).addClass("tab-active");
-		        $("#status").removeClass("tab-active");
-		        $("#status-tab").css("display","none");
-		        $("#receipt-tab").show();
-
-		    });
-		  //STATUS TAB ACTIVATE
-		    $("#status").click(function(){
-		        $(this).addClass("tab-active");
-		        $("#receipt").removeClass("tab-active");
-		        $("#receipt-tab").css("display","none");
-		        $("#status-tab").show();
-		    });
-		});
-    </script>
 <!-- SCRIPTS & JQuery -->
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <!-- Bootstrap tooltips -->
@@ -236,8 +311,8 @@
 
 	  
 
-	    <script >
-	      $(document).ready(function(){
+    <script >
+      $(document).ready(function(){
 	  //RECEIPT TAB ACTIVATE
 	    $("#receipt").click(function(){
 	        $(this).addClass("tab-active");
@@ -254,7 +329,7 @@
 	        $("#status-tab").show();
 	    });
 	});
-	    </script>
+    </script>
 
 </body>
 
